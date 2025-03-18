@@ -3,30 +3,28 @@
 import os
 from pathlib import Path
 
-# Build paths inside the project
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'your-secret-key-here'
+SECRET_KEY = '000'
 DEBUG = True
 
 ALLOWED_HOSTS = []
 
 # Application definition
 INSTALLED_APPS = [
-    # Default Django apps...
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # Third-party apps
     'rest_framework',
     'rest_framework_simplejwt',
     'drf_yasg',
-    # Local apps
     'users',
     'chat',
+'django_extensions',
 ]
 
 MIDDLEWARE = [
